@@ -9,10 +9,10 @@
 <ENTRY>
 {
  "type": "ET_CmdStep",
- "dateTimestamp": "Thu Jan 29 13:58:25 2026",
- "timestampMillis": "1769713105820",
+ "dateTimestamp": "Thu Jan 29 14:29:42 2026",
+ "timestampMillis": "1769714982584",
  "buildStep": {
-  "cmdId": "16a2c984-364e-41b9-a741-800ae52086f3",
+  "cmdId": "f78cf8d4-aedc-46bb-b872-023aed8fa81e",
   "name": "vitis-run",
   "logFile": "/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/logs/hls_compile.log",
   "commandLine": "vitis-run --mode hls --tcl /nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/script.tcl",
@@ -25,10 +25,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Thu Jan 29 13:58:25 2026",
- "timestampMillis": "1769713105821",
+ "dateTimestamp": "Thu Jan 29 14:29:42 2026",
+ "timestampMillis": "1769714982584",
  "status": {
-  "cmdId": "16a2c984-364e-41b9-a741-800ae52086f3",
+  "cmdId": "f78cf8d4-aedc-46bb-b872-023aed8fa81e",
   "state": "CS_RUNNING"
  }
 }
@@ -36,8 +36,8 @@
 <ENTRY>
 {
  "type": "ET_FlowMetaData",
- "dateTimestamp": "Thu Jan 29 13:58:25 2026",
- "timestampMillis": "1769713105821",
+ "dateTimestamp": "Thu Jan 29 14:29:42 2026",
+ "timestampMillis": "1769714982585",
  "buildSummary": {
   "hardwarePlatform": "",
   "hardwareDsa": "",
@@ -72,10 +72,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Thu Jan 29 13:58:25 2026",
- "timestampMillis": "1769713105822",
+ "dateTimestamp": "Thu Jan 29 14:29:42 2026",
+ "timestampMillis": "1769714982585",
  "buildStep": {
-  "cmdId": "492a11d5-2e35-4e8b-9055-e139eb2df394",
+  "cmdId": "ba7554b9-bfc9-441a-b278-2dc1db909dbf",
   "name": "export_design",
   "logFile": "/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/hls.log",
   "commandLine": "export_design",
@@ -88,10 +88,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Thu Jan 29 13:58:25 2026",
- "timestampMillis": "1769713105822",
+ "dateTimestamp": "Thu Jan 29 14:29:42 2026",
+ "timestampMillis": "1769714982586",
  "status": {
-  "cmdId": "492a11d5-2e35-4e8b-9055-e139eb2df394",
+  "cmdId": "ba7554b9-bfc9-441a-b278-2dc1db909dbf",
   "state": "CS_RUNNING"
  }
 }
@@ -99,8 +99,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Thu Jan 29 13:58:25 2026",
- "timestampMillis": "1769713105824",
+ "dateTimestamp": "Thu Jan 29 14:29:42 2026",
+ "timestampMillis": "1769714982589",
  "report": {
   "path": "/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog",
   "name": "",
@@ -113,8 +113,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Thu Jan 29 13:58:25 2026",
- "timestampMillis": "1769713105825",
+ "dateTimestamp": "Thu Jan 29 14:29:42 2026",
+ "timestampMillis": "1769714982589",
  "report": {
   "path": "/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/report/verilog/export_syn.rpt",
   "name": "",
@@ -127,8 +127,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Thu Jan 29 13:58:25 2026",
- "timestampMillis": "1769713105826",
+ "dateTimestamp": "Thu Jan 29 14:29:42 2026",
+ "timestampMillis": "1769714982595",
  "report": {
   "path": "/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/report/verilog/export_syn.xml",
   "name": "",
@@ -141,8 +141,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Thu Jan 29 13:58:25 2026",
- "timestampMillis": "1769713105826",
+ "dateTimestamp": "Thu Jan 29 14:29:42 2026",
+ "timestampMillis": "1769714982601",
  "report": {
   "path": "/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog",
   "name": "",
@@ -155,8 +155,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Thu Jan 29 13:58:25 2026",
- "timestampMillis": "1769713105827",
+ "dateTimestamp": "Thu Jan 29 14:29:42 2026",
+ "timestampMillis": "1769714982607",
  "report": {
   "path": "/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/report/verilog/export_impl.rpt",
   "name": "",
@@ -169,8 +169,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Thu Jan 29 13:58:25 2026",
- "timestampMillis": "1769713105827",
+ "dateTimestamp": "Thu Jan 29 14:29:42 2026",
+ "timestampMillis": "1769714982609",
  "report": {
   "path": "/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/report/verilog/export_impl.xml",
   "name": "",
@@ -183,8 +183,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Thu Jan 29 14:07:28 2026",
- "timestampMillis": "1769713648095",
+ "dateTimestamp": "Thu Jan 29 14:39:22 2026",
+ "timestampMillis": "1769715562982",
  "report": {
   "path": "/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls",
   "name": "",
@@ -197,8 +197,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Thu Jan 29 14:07:28 2026",
- "timestampMillis": "1769713648096",
+ "dateTimestamp": "Thu Jan 29 14:39:22 2026",
+ "timestampMillis": "1769715562983",
  "report": {
   "path": "/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls",
   "name": "",
@@ -211,10 +211,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Thu Jan 29 14:07:28 2026",
- "timestampMillis": "1769713648097",
+ "dateTimestamp": "Thu Jan 29 14:39:22 2026",
+ "timestampMillis": "1769715562984",
  "status": {
-  "cmdId": "492a11d5-2e35-4e8b-9055-e139eb2df394",
+  "cmdId": "ba7554b9-bfc9-441a-b278-2dc1db909dbf",
   "state": "CS_PASSED"
  }
 }
@@ -222,10 +222,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Thu Jan 29 14:07:28 2026",
- "timestampMillis": "1769713648119",
+ "dateTimestamp": "Thu Jan 29 14:39:23 2026",
+ "timestampMillis": "1769715563008",
  "status": {
-  "cmdId": "16a2c984-364e-41b9-a741-800ae52086f3",
+  "cmdId": "f78cf8d4-aedc-46bb-b872-023aed8fa81e",
   "state": "CS_PASSED"
  }
 }

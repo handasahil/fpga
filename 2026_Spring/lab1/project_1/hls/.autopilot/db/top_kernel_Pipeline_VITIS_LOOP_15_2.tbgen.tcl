@@ -14,7 +14,7 @@ set hasInterrupt 0
 set DLRegFirstOffset 0
 set DLRegItemOffset 0
 set svuvm_can_support 1
-set cdfgNum 5
+set cdfgNum 7
 set C_modelName {top_kernel_Pipeline_VITIS_LOOP_15_2}
 set C_modelType { void 0 }
 set ap_memory_interface_dict [dict create]

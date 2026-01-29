@@ -487,10 +487,10 @@ for.body4.split:13 %tmp_1 = bitselect i1 @_ssdm_op_BitSelect.i1.i25.i32, i25 %ad
 
 <Node id="31" bw="1" op_0_bw="1" op_1_bw="24" op_2_bw="32">
 <![CDATA[
-for.body4.split:14 %tmp_2 = bitselect i1 @_ssdm_op_BitSelect.i1.i24.i32, i24 %add_ln17, i32 23
+for.body4.split:14 %tmp_7 = bitselect i1 @_ssdm_op_BitSelect.i1.i24.i32, i24 %add_ln17, i32 23
 
 ]]></Node>
-<StgValue><ssdm name="tmp_2"/></StgValue>
+<StgValue><ssdm name="tmp_7"/></StgValue>
 </operation>
 
 <operation id="33" st_id="2" stage="1" lat="1">
@@ -517,7 +517,7 @@ for.body4.split:15 %xor_ln17 = xor i1 %tmp_1, i1 1
 
 <Node id="33" bw="1" op_0_bw="1" op_1_bw="1">
 <![CDATA[
-for.body4.split:16 %and_ln17 = and i1 %tmp_2, i1 %xor_ln17
+for.body4.split:16 %and_ln17 = and i1 %tmp_7, i1 %xor_ln17
 
 ]]></Node>
 <StgValue><ssdm name="and_ln17"/></StgValue>
@@ -532,7 +532,7 @@ for.body4.split:16 %and_ln17 = and i1 %tmp_2, i1 %xor_ln17
 
 <Node id="34" bw="1" op_0_bw="1" op_1_bw="1">
 <![CDATA[
-for.body4.split:17 %xor_ln17_1 = xor i1 %tmp_1, i1 %tmp_2
+for.body4.split:17 %xor_ln17_1 = xor i1 %tmp_1, i1 %tmp_7
 
 ]]></Node>
 <StgValue><ssdm name="xor_ln17_1"/></StgValue>

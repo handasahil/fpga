@@ -14,7 +14,7 @@ set hasInterrupt 0
 set DLRegFirstOffset 0
 set DLRegItemOffset 0
 set svuvm_can_support 1
-set cdfgNum 5
+set cdfgNum 7
 set C_modelName {top_kernel}
 set C_modelType { void 0 }
 set ap_memory_interface_dict [dict create]
@@ -65,7 +65,7 @@ set NewPortList {[
 set ArgLastReadFirstWriteLatency {
 	top_kernel {
 		A {Type I LastRead 0 FirstWrite -1}
-		C {Type O LastRead -1 FirstWrite 7}
+		C {Type O LastRead -1 FirstWrite 2}
 		tmp {Type IO LastRead -1 FirstWrite -1}}
 	top_kernel_Pipeline_VITIS_LOOP_15_2 {
 		zext_ln26 {Type I LastRead 0 FirstWrite -1}
@@ -75,13 +75,22 @@ set ArgLastReadFirstWriteLatency {
 		zext_ln26 {Type I LastRead 0 FirstWrite -1}
 		A {Type I LastRead 0 FirstWrite -1}
 		conv_i362 {Type I LastRead 0 FirstWrite -1}
-		tmp {Type O LastRead -1 FirstWrite 44}}}
+		tmp {Type O LastRead -1 FirstWrite 44}}
+	top_kernel_Pipeline_VITIS_LOOP_35_5 {
+		zext_ln31 {Type I LastRead 0 FirstWrite -1}
+		p_out {Type O LastRead -1 FirstWrite 0}
+		tmp {Type I LastRead 0 FirstWrite -1}}
+	top_kernel_Pipeline_VITIS_LOOP_44_6 {
+		zext_ln31 {Type I LastRead 0 FirstWrite -1}
+		C {Type O LastRead -1 FirstWrite 2}
+		conv7_i {Type I LastRead 0 FirstWrite -1}
+		tmp {Type I LastRead 0 FirstWrite -1}}}
 
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "128002", "Max" : "128002"}
-	, {"Name" : "Interval", "Min" : "128003", "Max" : "128003"}
+	{"Name" : "Latency", "Min" : "79234", "Max" : "79234"}
+	, {"Name" : "Interval", "Min" : "79235", "Max" : "79235"}
 ]}
 
 set PipelineEnableSignalInfo {[

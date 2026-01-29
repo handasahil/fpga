@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'top_kernel_Pipeline_VITIS_LOOP_15_2'
 ================================================================
-* Date:           Thu Jan 29 13:57:06 2026
+* Date:           Thu Jan 29 14:28:01 2026
 
 * Version:        2025.1.1 (Build 6214317 on Sep 11 2025)
 * Project:        project_1
@@ -117,10 +117,10 @@ ST_2 : Operation 28 [1/1] (0.00ns)   --->   "%sext_ln17_1 = sext i24 %A_load" [t
 ST_2 : Operation 29 [1/1] (1.10ns)   --->   "%add_ln17 = add i24 %A_load, i24 %p_load" [top.cpp:17]   --->   Operation 29 'add' 'add_ln17' <Predicate = true> <Delay = 1.10> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.10> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 30 [1/1] (1.10ns)   --->   "%add_ln17_1 = add i25 %sext_ln17_1, i25 %sext_ln17" [top.cpp:17]   --->   Operation 30 'add' 'add_ln17_1' <Predicate = true> <Delay = 1.10> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.10> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 31 [1/1] (0.00ns)   --->   "%tmp_1 = bitselect i1 @_ssdm_op_BitSelect.i1.i25.i32, i25 %add_ln17_1, i32 24" [top.cpp:17]   --->   Operation 31 'bitselect' 'tmp_1' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 32 [1/1] (0.00ns)   --->   "%tmp_2 = bitselect i1 @_ssdm_op_BitSelect.i1.i24.i32, i24 %add_ln17, i32 23" [top.cpp:17]   --->   Operation 32 'bitselect' 'tmp_2' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 32 [1/1] (0.00ns)   --->   "%tmp_7 = bitselect i1 @_ssdm_op_BitSelect.i1.i24.i32, i24 %add_ln17, i32 23" [top.cpp:17]   --->   Operation 32 'bitselect' 'tmp_7' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 33 [1/1] (0.00ns) (grouped into LUT with out node select_ln17_1)   --->   "%xor_ln17 = xor i1 %tmp_1, i1 1" [top.cpp:17]   --->   Operation 33 'xor' 'xor_ln17' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.33> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 34 [1/1] (0.00ns) (grouped into LUT with out node select_ln17_1)   --->   "%and_ln17 = and i1 %tmp_2, i1 %xor_ln17" [top.cpp:17]   --->   Operation 34 'and' 'and_ln17' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.33> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 35 [1/1] (0.00ns) (grouped into LUT with out node select_ln17_1)   --->   "%xor_ln17_1 = xor i1 %tmp_1, i1 %tmp_2" [top.cpp:17]   --->   Operation 35 'xor' 'xor_ln17_1' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.33> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 34 [1/1] (0.00ns) (grouped into LUT with out node select_ln17_1)   --->   "%and_ln17 = and i1 %tmp_7, i1 %xor_ln17" [top.cpp:17]   --->   Operation 34 'and' 'and_ln17' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.33> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 35 [1/1] (0.00ns) (grouped into LUT with out node select_ln17_1)   --->   "%xor_ln17_1 = xor i1 %tmp_1, i1 %tmp_7" [top.cpp:17]   --->   Operation 35 'xor' 'xor_ln17_1' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.33> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 36 [1/1] (0.00ns) (grouped into LUT with out node select_ln17_1)   --->   "%select_ln17 = select i1 %and_ln17, i24 8388607, i24 8388608" [top.cpp:17]   --->   Operation 36 'select' 'select_ln17' <Predicate = true> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.43> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 ST_2 : Operation 37 [1/1] (0.43ns) (out node of the LUT)   --->   "%select_ln17_1 = select i1 %xor_ln17_1, i24 %select_ln17, i24 %add_ln17" [top.cpp:17]   --->   Operation 37 'select' 'select_ln17_1' <Predicate = true> <Delay = 0.43> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.43> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 ST_2 : Operation 38 [1/1] (0.48ns)   --->   "%store_ln17 = store i24 %select_ln17_1, i24 %empty" [top.cpp:17]   --->   Operation 38 'store' 'store_ln17' <Predicate = true> <Delay = 0.48>
@@ -144,7 +144,9 @@ The critical path consists of the following:
 The critical path consists of the following:
 	'load' operation 24 bit ('A_load', top.cpp:17) on array 'A' [26]  (1.352 ns)
 	'add' operation 25 bit ('add_ln17_1', top.cpp:17) [29]  (1.110 ns)
-	'xor' operation 1 bit ('xor_ln17_1', top.cpp:17) [34]  (0.000 ns)
+	'xor' operation 1 bit ('xor_ln17', top.cpp:17) [32]  (0.000 ns)
+	'and' operation 1 bit ('and_ln17', top.cpp:17) [33]  (0.000 ns)
+	'select' operation 24 bit ('select_ln17', top.cpp:17) [35]  (0.000 ns)
 	'select' operation 24 bit ('select_ln17_1', top.cpp:17) [36]  (0.435 ns)
 	'store' operation 0 bit ('store_ln17', top.cpp:17) of variable 'select_ln17_1', top.cpp:17 on local variable 'empty' [38]  (0.489 ns)
 

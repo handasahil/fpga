@@ -71,7 +71,7 @@ wire  signed [24:0] sext_ln17_fu_138_p1;
 wire   [24:0] add_ln17_1_fu_152_p2;
 wire   [23:0] add_ln17_fu_146_p2;
 wire   [0:0] tmp_1_fu_158_p3;
-wire   [0:0] tmp_2_fu_166_p3;
+wire   [0:0] tmp_7_fu_166_p3;
 wire   [0:0] xor_ln17_fu_174_p2;
 wire   [0:0] and_ln17_fu_180_p2;
 wire   [0:0] xor_ln17_1_fu_186_p2;
@@ -253,7 +253,7 @@ assign add_ln17_fu_146_p1 = empty_fu_56;
 
 assign add_ln17_fu_146_p2 = ($signed(add_ln17_fu_146_p0) + $signed(add_ln17_fu_146_p1));
 
-assign and_ln17_fu_180_p2 = (xor_ln17_fu_174_p2 & tmp_2_fu_166_p3);
+assign and_ln17_fu_180_p2 = (xor_ln17_fu_174_p2 & tmp_7_fu_166_p3);
 
 assign ap_CS_fsm_pp0_stage0 = ap_CS_fsm[32'd0];
 
@@ -293,9 +293,9 @@ assign sext_ln17_fu_138_p1 = sext_ln17_fu_138_p0;
 
 assign tmp_1_fu_158_p3 = add_ln17_1_fu_152_p2[32'd24];
 
-assign tmp_2_fu_166_p3 = add_ln17_fu_146_p2[32'd23];
+assign tmp_7_fu_166_p3 = add_ln17_fu_146_p2[32'd23];
 
-assign xor_ln17_1_fu_186_p2 = (tmp_2_fu_166_p3 ^ tmp_1_fu_158_p3);
+assign xor_ln17_1_fu_186_p2 = (tmp_7_fu_166_p3 ^ tmp_1_fu_158_p3);
 
 assign xor_ln17_fu_174_p2 = (tmp_1_fu_158_p3 ^ 1'd1);
 

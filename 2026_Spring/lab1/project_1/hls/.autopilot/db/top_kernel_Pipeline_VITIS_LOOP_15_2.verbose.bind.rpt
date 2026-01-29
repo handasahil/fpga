@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'top_kernel_Pipeline_VITIS_LOOP_15_2'
 ================================================================
-* Date:           Thu Jan 29 13:57:06 2026
+* Date:           Thu Jan 29 14:28:01 2026
 
 * Version:        2025.1.1 (Build 6214317 on Sep 11 2025)
 * Project:        project_1
@@ -117,10 +117,10 @@ ST_2 : Operation 28 [1/1] (0.00ns)   --->   "%sext_ln17_1 = sext i24 %A_load" [t
 ST_2 : Operation 29 [1/1] (1.10ns)   --->   "%add_ln17 = add i24 %A_load, i24 %p_load" [top.cpp:17]   --->   Operation 29 'add' 'add_ln17' <Predicate = true> <Delay = 1.10> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.10> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 30 [1/1] (1.10ns)   --->   "%add_ln17_1 = add i25 %sext_ln17_1, i25 %sext_ln17" [top.cpp:17]   --->   Operation 30 'add' 'add_ln17_1' <Predicate = true> <Delay = 1.10> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.10> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 31 [1/1] (0.00ns)   --->   "%tmp_1 = bitselect i1 @_ssdm_op_BitSelect.i1.i25.i32, i25 %add_ln17_1, i32 24" [top.cpp:17]   --->   Operation 31 'bitselect' 'tmp_1' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 32 [1/1] (0.00ns)   --->   "%tmp_2 = bitselect i1 @_ssdm_op_BitSelect.i1.i24.i32, i24 %add_ln17, i32 23" [top.cpp:17]   --->   Operation 32 'bitselect' 'tmp_2' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 32 [1/1] (0.00ns)   --->   "%tmp_7 = bitselect i1 @_ssdm_op_BitSelect.i1.i24.i32, i24 %add_ln17, i32 23" [top.cpp:17]   --->   Operation 32 'bitselect' 'tmp_7' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 33 [1/1] (0.00ns) (grouped into LUT with out node select_ln17_1)   --->   "%xor_ln17 = xor i1 %tmp_1, i1 1" [top.cpp:17]   --->   Operation 33 'xor' 'xor_ln17' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.33> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 34 [1/1] (0.00ns) (grouped into LUT with out node select_ln17_1)   --->   "%and_ln17 = and i1 %tmp_2, i1 %xor_ln17" [top.cpp:17]   --->   Operation 34 'and' 'and_ln17' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.33> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 35 [1/1] (0.00ns) (grouped into LUT with out node select_ln17_1)   --->   "%xor_ln17_1 = xor i1 %tmp_1, i1 %tmp_2" [top.cpp:17]   --->   Operation 35 'xor' 'xor_ln17_1' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.33> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 34 [1/1] (0.00ns) (grouped into LUT with out node select_ln17_1)   --->   "%and_ln17 = and i1 %tmp_7, i1 %xor_ln17" [top.cpp:17]   --->   Operation 34 'and' 'and_ln17' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.33> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 35 [1/1] (0.00ns) (grouped into LUT with out node select_ln17_1)   --->   "%xor_ln17_1 = xor i1 %tmp_1, i1 %tmp_7" [top.cpp:17]   --->   Operation 35 'xor' 'xor_ln17_1' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.33> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 36 [1/1] (0.00ns) (grouped into LUT with out node select_ln17_1)   --->   "%select_ln17 = select i1 %and_ln17, i24 8388607, i24 8388608" [top.cpp:17]   --->   Operation 36 'select' 'select_ln17' <Predicate = true> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.43> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 ST_2 : Operation 37 [1/1] (0.43ns) (out node of the LUT)   --->   "%select_ln17_1 = select i1 %xor_ln17_1, i24 %select_ln17, i24 %add_ln17" [top.cpp:17]   --->   Operation 37 'select' 'select_ln17_1' <Predicate = true> <Delay = 0.43> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.43> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 ST_2 : Operation 38 [1/1] (0.48ns)   --->   "%store_ln17 = store i24 %select_ln17_1, i24 %empty" [top.cpp:17]   --->   Operation 38 'store' 'store_ln17' <Predicate = true> <Delay = 0.48>
@@ -173,7 +173,7 @@ sext_ln17_1            (sext             ) [ 000]
 add_ln17               (add              ) [ 000]
 add_ln17_1             (add              ) [ 000]
 tmp_1                  (bitselect        ) [ 000]
-tmp_2                  (bitselect        ) [ 000]
+tmp_7                  (bitselect        ) [ 000]
 xor_ln17               (xor              ) [ 000]
 and_ln17               (and              ) [ 000]
 xor_ln17_1             (xor              ) [ 000]
@@ -690,7 +690,7 @@ ret_ln0                (ret              ) [ 000]
 </bind>
 </comp>
 
-<comp id="166" class="1004" name="tmp_2_fu_166">
+<comp id="166" class="1004" name="tmp_7_fu_166">
 <pin_list>
 <pin id="167" dir="0" index="0" bw="1" slack="0"/>
 <pin id="168" dir="0" index="1" bw="24" slack="0"/>
@@ -699,7 +699,7 @@ ret_ln0                (ret              ) [ 000]
 </pin_list>
 <bind>
 <opcode="bitselect(1000) " fcode="bitselect"/>
-<opset="tmp_2/2 "/>
+<opset="tmp_7/2 "/>
 </bind>
 </comp>
 
@@ -970,7 +970,7 @@ ret_ln0                (ret              ) [ 000]
 		add_ln17 : 1
 		add_ln17_1 : 2
 		tmp_1 : 3
-		tmp_2 : 2
+		tmp_7 : 2
 		xor_ln17 : 4
 		and_ln17 : 4
 		xor_ln17_1 : 4
@@ -1013,7 +1013,7 @@ ret_ln0                (ret              ) [ 000]
 |          |     sext_ln17_1_fu_142    |    0    |    0    |
 |----------|---------------------------|---------|---------|
 | bitselect|        tmp_1_fu_158       |    0    |    0    |
-|          |        tmp_2_fu_166       |    0    |    0    |
+|          |        tmp_7_fu_166       |    0    |    0    |
 |----------|---------------------------|---------|---------|
 |   Total  |                           |    0    |   165   |
 |----------|---------------------------|---------|---------|

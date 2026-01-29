@@ -1442,10 +1442,10 @@ for.body12.split:10 %sdiv_ln26 = sdiv i40 %shl_ln1, i40 %conv_i362_cast
 
 <Node id="29" bw="1" op_0_bw="1" op_1_bw="40" op_2_bw="32">
 <![CDATA[
-for.body12.split:11 %tmp_1_1 = bitselect i1 @_ssdm_op_BitSelect.i1.i40.i32, i40 %sdiv_ln26, i32 39
+for.body12.split:11 %tmp_1 = bitselect i1 @_ssdm_op_BitSelect.i1.i40.i32, i40 %sdiv_ln26, i32 39
 
 ]]></Node>
-<StgValue><ssdm name="tmp_1_1"/></StgValue>
+<StgValue><ssdm name="tmp_1"/></StgValue>
 </operation>
 
 <operation id="116" st_id="45" stage="1" lat="1">
@@ -1472,10 +1472,10 @@ for.body12.split:12 %trunc_ln26 = trunc i40 %sdiv_ln26
 
 <Node id="31" bw="1" op_0_bw="1" op_1_bw="40" op_2_bw="32">
 <![CDATA[
-for.body12.split:13 %tmp_1 = bitselect i1 @_ssdm_op_BitSelect.i1.i40.i32, i40 %sdiv_ln26, i32 23
+for.body12.split:13 %tmp_6 = bitselect i1 @_ssdm_op_BitSelect.i1.i40.i32, i40 %sdiv_ln26, i32 23
 
 ]]></Node>
-<StgValue><ssdm name="tmp_1"/></StgValue>
+<StgValue><ssdm name="tmp_6"/></StgValue>
 </operation>
 
 <operation id="118" st_id="45" stage="1" lat="1">
@@ -1532,7 +1532,7 @@ for.body12.split:16 %icmp_ln26_1 = icmp_ne  i16 %tmp_s, i16 0
 
 <Node id="35" bw="1" op_0_bw="1" op_1_bw="1">
 <![CDATA[
-for.body12.split:17 %or_ln26 = or i1 %tmp_1, i1 %icmp_ln26_1
+for.body12.split:17 %or_ln26 = or i1 %tmp_6, i1 %icmp_ln26_1
 
 ]]></Node>
 <StgValue><ssdm name="or_ln26"/></StgValue>
@@ -1547,7 +1547,7 @@ for.body12.split:17 %or_ln26 = or i1 %tmp_1, i1 %icmp_ln26_1
 
 <Node id="36" bw="1" op_0_bw="1" op_1_bw="1">
 <![CDATA[
-for.body12.split:18 %xor_ln26 = xor i1 %tmp_1_1, i1 1
+for.body12.split:18 %xor_ln26 = xor i1 %tmp_1, i1 1
 
 ]]></Node>
 <StgValue><ssdm name="xor_ln26"/></StgValue>
@@ -1577,7 +1577,7 @@ for.body12.split:19 %and_ln26 = and i1 %or_ln26, i1 %xor_ln26
 
 <Node id="38" bw="1" op_0_bw="1" op_1_bw="1">
 <![CDATA[
-for.body12.split:20 %xor_ln26_1 = xor i1 %tmp_1, i1 1
+for.body12.split:20 %xor_ln26_1 = xor i1 %tmp_6, i1 1
 
 ]]></Node>
 <StgValue><ssdm name="xor_ln26_1"/></StgValue>
@@ -1607,7 +1607,7 @@ for.body12.split:21 %or_ln26_1 = or i1 %icmp_ln26, i1 %xor_ln26_1
 
 <Node id="40" bw="1" op_0_bw="1" op_1_bw="1">
 <![CDATA[
-for.body12.split:22 %and_ln26_1 = and i1 %or_ln26_1, i1 %tmp_1_1
+for.body12.split:22 %and_ln26_1 = and i1 %or_ln26_1, i1 %tmp_1
 
 ]]></Node>
 <StgValue><ssdm name="and_ln26_1"/></StgValue>
@@ -2012,19 +2012,19 @@ for.body12.split:28 %br_ln24 = br void %for.body12
 </dataflow>
 <dataflow id="401" from="conv_i362_cast" to="sdiv_ln26" fromId="51" toId="114">
 </dataflow>
-<dataflow id="403" from="_ssdm_op_BitSelect.i1.i40.i32" to="tmp_1_1" fromId="402" toId="115">
+<dataflow id="403" from="_ssdm_op_BitSelect.i1.i40.i32" to="tmp_1" fromId="402" toId="115">
 </dataflow>
-<dataflow id="404" from="sdiv_ln26" to="tmp_1_1" fromId="114" toId="115">
+<dataflow id="404" from="sdiv_ln26" to="tmp_1" fromId="114" toId="115">
 </dataflow>
-<dataflow id="406" from="StgValue_405" to="tmp_1_1" fromId="405" toId="115">
+<dataflow id="406" from="StgValue_405" to="tmp_1" fromId="405" toId="115">
 </dataflow>
 <dataflow id="407" from="sdiv_ln26" to="trunc_ln26" fromId="114" toId="116">
 </dataflow>
-<dataflow id="408" from="_ssdm_op_BitSelect.i1.i40.i32" to="tmp_1" fromId="402" toId="117">
+<dataflow id="408" from="_ssdm_op_BitSelect.i1.i40.i32" to="tmp_6" fromId="402" toId="117">
 </dataflow>
-<dataflow id="409" from="sdiv_ln26" to="tmp_1" fromId="114" toId="117">
+<dataflow id="409" from="sdiv_ln26" to="tmp_6" fromId="114" toId="117">
 </dataflow>
-<dataflow id="411" from="StgValue_410" to="tmp_1" fromId="410" toId="117">
+<dataflow id="411" from="StgValue_410" to="tmp_6" fromId="410" toId="117">
 </dataflow>
 <dataflow id="413" from="_ssdm_op_PartSelect.i16.i40.i32.i32" to="tmp_s" fromId="412" toId="118">
 </dataflow>
@@ -2042,11 +2042,11 @@ for.body12.split:28 %br_ln24 = br void %for.body12
 </dataflow>
 <dataflow id="422" from="StgValue_292" to="icmp_ln26_1" fromId="292" toId="120">
 </dataflow>
-<dataflow id="423" from="tmp_1" to="or_ln26" fromId="117" toId="121">
+<dataflow id="423" from="tmp_6" to="or_ln26" fromId="117" toId="121">
 </dataflow>
 <dataflow id="424" from="icmp_ln26_1" to="or_ln26" fromId="120" toId="121">
 </dataflow>
-<dataflow id="425" from="tmp_1_1" to="xor_ln26" fromId="115" toId="122">
+<dataflow id="425" from="tmp_1" to="xor_ln26" fromId="115" toId="122">
 </dataflow>
 <dataflow id="427" from="StgValue_426" to="xor_ln26" fromId="426" toId="122">
 </dataflow>
@@ -2054,7 +2054,7 @@ for.body12.split:28 %br_ln24 = br void %for.body12
 </dataflow>
 <dataflow id="429" from="xor_ln26" to="and_ln26" fromId="122" toId="123">
 </dataflow>
-<dataflow id="430" from="tmp_1" to="xor_ln26_1" fromId="117" toId="124">
+<dataflow id="430" from="tmp_6" to="xor_ln26_1" fromId="117" toId="124">
 </dataflow>
 <dataflow id="431" from="StgValue_426" to="xor_ln26_1" fromId="426" toId="124">
 </dataflow>
@@ -2064,7 +2064,7 @@ for.body12.split:28 %br_ln24 = br void %for.body12
 </dataflow>
 <dataflow id="434" from="or_ln26_1" to="and_ln26_1" fromId="125" toId="126">
 </dataflow>
-<dataflow id="435" from="tmp_1_1" to="and_ln26_1" fromId="115" toId="126">
+<dataflow id="435" from="tmp_1" to="and_ln26_1" fromId="115" toId="126">
 </dataflow>
 <dataflow id="436" from="and_ln26" to="select_ln26" fromId="123" toId="127">
 </dataflow>

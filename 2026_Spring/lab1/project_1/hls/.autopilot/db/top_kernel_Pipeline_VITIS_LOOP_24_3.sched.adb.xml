@@ -1442,10 +1442,10 @@ for.body12.split:10 %sdiv_ln26 = sdiv i40 %shl_ln1, i40 %conv_i362_cast
 
 <Node id="29" bw="1" op_0_bw="1" op_1_bw="40" op_2_bw="32">
 <![CDATA[
-for.body12.split:11 %tmp_1_1 = bitselect i1 @_ssdm_op_BitSelect.i1.i40.i32, i40 %sdiv_ln26, i32 39
+for.body12.split:11 %tmp_1 = bitselect i1 @_ssdm_op_BitSelect.i1.i40.i32, i40 %sdiv_ln26, i32 39
 
 ]]></Node>
-<StgValue><ssdm name="tmp_1_1"/></StgValue>
+<StgValue><ssdm name="tmp_1"/></StgValue>
 </operation>
 
 <operation id="116" st_id="45" stage="1" lat="1">
@@ -1472,10 +1472,10 @@ for.body12.split:12 %trunc_ln26 = trunc i40 %sdiv_ln26
 
 <Node id="31" bw="1" op_0_bw="1" op_1_bw="40" op_2_bw="32">
 <![CDATA[
-for.body12.split:13 %tmp_1 = bitselect i1 @_ssdm_op_BitSelect.i1.i40.i32, i40 %sdiv_ln26, i32 23
+for.body12.split:13 %tmp_6 = bitselect i1 @_ssdm_op_BitSelect.i1.i40.i32, i40 %sdiv_ln26, i32 23
 
 ]]></Node>
-<StgValue><ssdm name="tmp_1"/></StgValue>
+<StgValue><ssdm name="tmp_6"/></StgValue>
 </operation>
 
 <operation id="118" st_id="45" stage="1" lat="1">
@@ -1532,7 +1532,7 @@ for.body12.split:16 %icmp_ln26_1 = icmp_ne  i16 %tmp_s, i16 0
 
 <Node id="35" bw="1" op_0_bw="1" op_1_bw="1">
 <![CDATA[
-for.body12.split:17 %or_ln26 = or i1 %tmp_1, i1 %icmp_ln26_1
+for.body12.split:17 %or_ln26 = or i1 %tmp_6, i1 %icmp_ln26_1
 
 ]]></Node>
 <StgValue><ssdm name="or_ln26"/></StgValue>
@@ -1547,7 +1547,7 @@ for.body12.split:17 %or_ln26 = or i1 %tmp_1, i1 %icmp_ln26_1
 
 <Node id="36" bw="1" op_0_bw="1" op_1_bw="1">
 <![CDATA[
-for.body12.split:18 %xor_ln26 = xor i1 %tmp_1_1, i1 1
+for.body12.split:18 %xor_ln26 = xor i1 %tmp_1, i1 1
 
 ]]></Node>
 <StgValue><ssdm name="xor_ln26"/></StgValue>
@@ -1577,7 +1577,7 @@ for.body12.split:19 %and_ln26 = and i1 %or_ln26, i1 %xor_ln26
 
 <Node id="38" bw="1" op_0_bw="1" op_1_bw="1">
 <![CDATA[
-for.body12.split:20 %xor_ln26_1 = xor i1 %tmp_1, i1 1
+for.body12.split:20 %xor_ln26_1 = xor i1 %tmp_6, i1 1
 
 ]]></Node>
 <StgValue><ssdm name="xor_ln26_1"/></StgValue>
@@ -1607,7 +1607,7 @@ for.body12.split:21 %or_ln26_1 = or i1 %icmp_ln26, i1 %xor_ln26_1
 
 <Node id="40" bw="1" op_0_bw="1" op_1_bw="1">
 <![CDATA[
-for.body12.split:22 %and_ln26_1 = and i1 %or_ln26_1, i1 %tmp_1_1
+for.body12.split:22 %and_ln26_1 = and i1 %or_ln26_1, i1 %tmp_1
 
 ]]></Node>
 <StgValue><ssdm name="and_ln26_1"/></StgValue>

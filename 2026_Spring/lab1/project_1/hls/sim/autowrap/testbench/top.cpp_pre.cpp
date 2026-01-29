@@ -59288,6 +59288,7 @@ void top_kernel(data_t A[256][64],
 
 
         for (int i = 0; i < 256; i++) {
+#pragma HLS PIPELINE II=1
             col_sum += tmp[i][j];
         }
 
@@ -59296,6 +59297,7 @@ void top_kernel(data_t A[256][64],
 
 
         for (int i = 0; i < 256; i++) {
+#pragma HLS PIPELINE II=1
             C[i][j] = tmp[i][j] * scale;
         }
     }

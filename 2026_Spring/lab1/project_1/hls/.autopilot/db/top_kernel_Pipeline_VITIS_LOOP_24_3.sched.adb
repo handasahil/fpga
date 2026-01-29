@@ -1132,7 +1132,7 @@
 					<Obj>
 						<type>0</type>
 						<id>29</id>
-						<name>tmp_1_1</name>
+						<name>tmp_1</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1</fileDirectory>
 						<lineNumber>26</lineNumber>
@@ -1246,7 +1246,7 @@
 					<Obj>
 						<type>0</type>
 						<id>31</id>
-						<name>tmp_1</name>
+						<name>tmp_6</name>
 						<fileName>top.cpp</fileName>
 						<fileDirectory>/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1</fileDirectory>
 						<lineNumber>26</lineNumber>

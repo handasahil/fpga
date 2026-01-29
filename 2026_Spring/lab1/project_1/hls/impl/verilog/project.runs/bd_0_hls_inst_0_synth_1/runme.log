@@ -7,12 +7,12 @@
   **** SW Build 6233196 on Thu Sep 11 21:27:11 MDT 2025
   **** IP Build 6232796 on Fri Sep 12 01:46:16 MDT 2025
   **** SharedData Build 6233195 on Thu Sep 11 17:56:43 MDT 2025
-  **** Start of session at: Thu Jan 29 13:59:33 2026
+  **** Start of session at: Thu Jan 29 14:31:02 2026
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source bd_0_hls_inst_0.tcl -notrace
-INFO: Dispatch client connection id - 35829
+INFO: Dispatch client connection id - 42331
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/ip'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/software/xilinx/2025.1.1/data/ip'.
@@ -23,60 +23,60 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu3eg
 INFO: [Device 21-403] Loading part xczu3eg-sbva484-1-e
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 1493748
+INFO: [Synth 8-7075] Helper process launched with PID 490823
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 53506 ; free virtual = 182179
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 30081 ; free virtual = 162554
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'bd_0_hls_inst_0' [/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.v:53]
-INFO: [Synth 8-6157] synthesizing module 'top_kernel' [/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0a2a/hdl/verilog/top_kernel.v:9]
-INFO: [Synth 8-6157] synthesizing module 'top_kernel_tmp_RAM_AUTO_1R1W' [/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0a2a/hdl/verilog/top_kernel_tmp_RAM_AUTO_1R1W.v:7]
-INFO: [Synth 8-3876] $readmem data file './top_kernel_tmp_RAM_AUTO_1R1W.dat' is read successfully [/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0a2a/hdl/verilog/top_kernel_tmp_RAM_AUTO_1R1W.v:31]
-INFO: [Synth 8-6155] done synthesizing module 'top_kernel_tmp_RAM_AUTO_1R1W' (0#1) [/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0a2a/hdl/verilog/top_kernel_tmp_RAM_AUTO_1R1W.v:7]
-INFO: [Synth 8-6157] synthesizing module 'top_kernel_mul_24s_24s_48_1_1' [/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0a2a/hdl/verilog/top_kernel_mul_24s_24s_48_1_1.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'top_kernel_mul_24s_24s_48_1_1' (0#1) [/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0a2a/hdl/verilog/top_kernel_mul_24s_24s_48_1_1.v:5]
-INFO: [Synth 8-6157] synthesizing module 'top_kernel_mul_40s_42ns_81_1_1' [/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0a2a/hdl/verilog/top_kernel_mul_40s_42ns_81_1_1.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'top_kernel_mul_40s_42ns_81_1_1' (0#1) [/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0a2a/hdl/verilog/top_kernel_mul_40s_42ns_81_1_1.v:5]
-INFO: [Synth 8-6157] synthesizing module 'top_kernel_sdiv_40ns_24s_40_44_seq_1' [/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0a2a/hdl/verilog/top_kernel_sdiv_40ns_24s_40_44_seq_1.v:88]
-INFO: [Synth 8-6157] synthesizing module 'top_kernel_sdiv_40ns_24s_40_44_seq_1_divseq' [/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0a2a/hdl/verilog/top_kernel_sdiv_40ns_24s_40_44_seq_1.v:8]
-INFO: [Synth 8-6155] done synthesizing module 'top_kernel_sdiv_40ns_24s_40_44_seq_1_divseq' (0#1) [/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0a2a/hdl/verilog/top_kernel_sdiv_40ns_24s_40_44_seq_1.v:8]
-INFO: [Synth 8-6155] done synthesizing module 'top_kernel_sdiv_40ns_24s_40_44_seq_1' (0#1) [/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0a2a/hdl/verilog/top_kernel_sdiv_40ns_24s_40_44_seq_1.v:88]
-INFO: [Synth 8-6155] done synthesizing module 'top_kernel' (0#1) [/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0a2a/hdl/verilog/top_kernel.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel' [/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ea4c/hdl/verilog/top_kernel.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_tmp_RAM_AUTO_1R1W' [/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ea4c/hdl/verilog/top_kernel_tmp_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-3876] $readmem data file './top_kernel_tmp_RAM_AUTO_1R1W.dat' is read successfully [/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ea4c/hdl/verilog/top_kernel_tmp_RAM_AUTO_1R1W.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_tmp_RAM_AUTO_1R1W' (0#1) [/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ea4c/hdl/verilog/top_kernel_tmp_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_mul_24s_24s_48_1_1' [/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ea4c/hdl/verilog/top_kernel_mul_24s_24s_48_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_mul_24s_24s_48_1_1' (0#1) [/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ea4c/hdl/verilog/top_kernel_mul_24s_24s_48_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_mul_40s_42ns_81_1_1' [/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ea4c/hdl/verilog/top_kernel_mul_40s_42ns_81_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_mul_40s_42ns_81_1_1' (0#1) [/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ea4c/hdl/verilog/top_kernel_mul_40s_42ns_81_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_sdiv_40ns_24s_40_44_seq_1' [/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ea4c/hdl/verilog/top_kernel_sdiv_40ns_24s_40_44_seq_1.v:88]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_sdiv_40ns_24s_40_44_seq_1_divseq' [/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ea4c/hdl/verilog/top_kernel_sdiv_40ns_24s_40_44_seq_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_sdiv_40ns_24s_40_44_seq_1_divseq' (0#1) [/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ea4c/hdl/verilog/top_kernel_sdiv_40ns_24s_40_44_seq_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_sdiv_40ns_24s_40_44_seq_1' (0#1) [/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ea4c/hdl/verilog/top_kernel_sdiv_40ns_24s_40_44_seq_1.v:88]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel' (0#1) [/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ea4c/hdl/verilog/top_kernel.v:9]
 INFO: [Synth 8-6155] done synthesizing module 'bd_0_hls_inst_0' (0#1) [/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.v:53]
-WARNING: [Synth 8-6014] Unused sequential element remd_reg was removed.  [/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0a2a/hdl/verilog/top_kernel_sdiv_40ns_24s_40_44_seq_1.v:172]
+WARNING: [Synth 8-6014] Unused sequential element remd_reg was removed.  [/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ea4c/hdl/verilog/top_kernel_sdiv_40ns_24s_40_44_seq_1.v:172]
 INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
 WARNING: [Synth 8-7129] Port reset in module top_kernel_tmp_RAM_AUTO_1R1W is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 53565 ; free virtual = 182239
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 29967 ; free virtual = 162442
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 53560 ; free virtual = 182235
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 29956 ; free virtual = 162431
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 53560 ; free virtual = 182235
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 29956 ; free virtual = 162431
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 53546 ; free virtual = 182219
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 29962 ; free virtual = 162437
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
 Parsing XDC File [/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/top_kernel_ooc.xdc] for cell 'inst'
-create_clock: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 53039 ; free virtual = 181721
+create_clock: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 29776 ; free virtual = 162250
 Finished Parsing XDC File [/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/top_kernel_ooc.xdc] for cell 'inst'
 Parsing XDC File [/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
 Finished Parsing XDC File [/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 53084 ; free virtual = 181766
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 29762 ; free virtual = 162235
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.04 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 53179 ; free virtual = 181861
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.04 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 29780 ; free virtual = 162253
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 53014 ; free virtual = 181736
+Finished Constraint Validation : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 29726 ; free virtual = 162206
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -84,18 +84,18 @@ Start Loading Part and Timing Information
 Loading part: xczu3eg-sbva484-1-e
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 53014 ; free virtual = 181736
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 29726 ; free virtual = 162206
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 53014 ; free virtual = 181736
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 29724 ; free virtual = 162204
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
 INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 53017 ; free virtual = 181739
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 29627 ; free virtual = 162112
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -161,7 +161,7 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
-WARNING: [Synth 8-3936] Found unconnected internal register 'sdiv_40ns_24s_40_44_seq_1_U3/top_kernel_sdiv_40ns_24s_40_44_seq_1_divseq_u/remd_tmp_reg' and it is trimmed from '40' to '39' bits. [/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0a2a/hdl/verilog/top_kernel_sdiv_40ns_24s_40_44_seq_1.v:44]
+WARNING: [Synth 8-3936] Found unconnected internal register 'sdiv_40ns_24s_40_44_seq_1_U3/top_kernel_sdiv_40ns_24s_40_44_seq_1_divseq_u/remd_tmp_reg' and it is trimmed from '40' to '39' bits. [/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/ea4c/hdl/verilog/top_kernel_sdiv_40ns_24s_40_44_seq_1.v:44]
 DSP Report: Generating DSP mul_40s_42ns_81_1_1_U2/tmp_product, operation Mode is: A*B2.
 DSP Report: register mul_40s_42ns_81_1_1_U2/tmp_product is absorbed into DSP mul_40s_42ns_81_1_1_U2/tmp_product.
 DSP Report: operator mul_40s_42ns_81_1_1_U2/tmp_product is absorbed into DSP mul_40s_42ns_81_1_1_U2/tmp_product.
@@ -191,7 +191,7 @@ DSP Report: register conv7_i_reg_1296_reg is absorbed into DSP mul_24s_24s_48_1_
 DSP Report: operator mul_24s_24s_48_1_1_U1/tmp_product is absorbed into DSP mul_24s_24s_48_1_1_U1/tmp_product.
 DSP Report: operator mul_24s_24s_48_1_1_U1/tmp_product is absorbed into DSP mul_24s_24s_48_1_1_U1/tmp_product.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 52905 ; free virtual = 181633
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 29700 ; free virtual = 162186
 ---------------------------------------------------------------------------------
  Sort Area is  mul_24s_24s_48_1_1_U1/tmp_product_7 : 0 0 : 3324 4380 : Used 1 time 0
  Sort Area is  mul_24s_24s_48_1_1_U1/tmp_product_7 : 0 1 : 1056 4380 : Used 1 time 0
@@ -234,14 +234,14 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:45 ; elapsed = 00:00:48 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 52162 ; free virtual = 180859
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:49 ; elapsed = 00:00:53 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 27123 ; free virtual = 159621
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5556] The block RAM "inst/tmp_U/ram_reg" may be mapped as a cascade chain, because it is not timing critical.
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:00:49 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 51953 ; free virtual = 180650
+Finished Timing Optimization : Time (s): cpu = 00:00:50 ; elapsed = 00:00:54 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 27042 ; free virtual = 159557
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -264,7 +264,7 @@ INFO: [Synth 8-7052] The timing for the instance inst/tmp_U/ram_reg_bram_7 (impl
 INFO: [Synth 8-7052] The timing for the instance inst/tmp_U/ram_reg_bram_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7052] The timing for the instance inst/tmp_U/ram_reg_bram_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:46 ; elapsed = 00:00:50 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 52183 ; free virtual = 180887
+Finished Technology Mapping : Time (s): cpu = 00:00:50 ; elapsed = 00:00:54 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 27008 ; free virtual = 159534
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -282,37 +282,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:52 ; elapsed = 00:00:56 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 51827 ; free virtual = 180541
+Finished IO Insertion : Time (s): cpu = 00:00:57 ; elapsed = 00:01:01 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 27001 ; free virtual = 159529
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:52 ; elapsed = 00:00:56 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 51823 ; free virtual = 180537
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:57 ; elapsed = 00:01:01 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 26999 ; free virtual = 159528
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:52 ; elapsed = 00:00:56 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 51936 ; free virtual = 180650
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:57 ; elapsed = 00:01:01 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 27015 ; free virtual = 159544
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:52 ; elapsed = 00:00:56 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 51935 ; free virtual = 180649
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:57 ; elapsed = 00:01:01 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 27014 ; free virtual = 159543
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:52 ; elapsed = 00:00:56 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 51933 ; free virtual = 180647
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:57 ; elapsed = 00:01:01 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 27013 ; free virtual = 159542
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:52 ; elapsed = 00:00:56 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 51932 ; free virtual = 180646
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:57 ; elapsed = 00:01:01 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 27025 ; free virtual = 159554
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -378,18 +378,18 @@ Report Cell Usage:
 |26    |FDSE            |    93|
 +------+----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:52 ; elapsed = 00:00:56 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 51932 ; free virtual = 180646
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:57 ; elapsed = 00:01:01 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 27022 ; free virtual = 159551
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 51903 ; free virtual = 180619
-Synthesis Optimization Complete : Time (s): cpu = 00:00:53 ; elapsed = 00:00:57 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 51903 ; free virtual = 180619
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:48 ; elapsed = 00:00:52 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 27558 ; free virtual = 160086
+Synthesis Optimization Complete : Time (s): cpu = 00:00:57 ; elapsed = 00:01:02 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 27595 ; free virtual = 160124
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 52052 ; free virtual = 180767
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 28944 ; free virtual = 161472
 INFO: [Netlist 29-17] Analyzing 69 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 51711 ; free virtual = 180429
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 28795 ; free virtual = 161344
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 7 instances were transformed.
   DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 7 instances
@@ -398,14 +398,14 @@ Synth Design complete | Checksum: ae70a404
 INFO: [Common 17-83] Releasing license: Synthesis
 41 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:05 ; elapsed = 00:01:06 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 51670 ; free virtual = 180388
-INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2695.321; main = 2622.421; forked = 208.768
-INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 5388.645; main = 3924.461; forked = 1598.230
-Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 51719 ; free virtual = 180445
+synth_design: Time (s): cpu = 00:01:11 ; elapsed = 00:01:12 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 28753 ; free virtual = 161308
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2823.567; main = 2615.619; forked = 208.628
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 5540.980; main = 3942.750; forked = 1598.230
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 28801 ; free virtual = 161360
 INFO: [Common 17-1381] The checkpoint '/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bd_0_hls_inst_0, cache-ID = 3ec3a6dcdda9eb94
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bd_0_hls_inst_0, cache-ID = 38639837d7ea40b5
 INFO: [Coretcl 2-1174] Renamed 6 cell refs.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 51548 ; free virtual = 180275
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 28786 ; free virtual = 161353
 INFO: [Common 17-1381] The checkpoint '/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file bd_0_hls_inst_0_utilization_synth.rpt -pb bd_0_hls_inst_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Jan 29 14:00:55 2026...
+INFO: [Common 17-206] Exiting Vivado at Thu Jan 29 14:32:32 2026...

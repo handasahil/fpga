@@ -1264,7 +1264,7 @@
             <Obj>
               <type>0</type>
               <id>31</id>
-              <name>tmp_2</name>
+              <name>tmp_7</name>
               <fileName>top.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>17</lineNumber>
@@ -1289,7 +1289,7 @@
                 </item>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>tmp_2_fu_166_p3</rtlName>
+              <rtlName>tmp_7_fu_166_p3</rtlName>
               <control></control>
               <opType></opType>
               <implIndex></implIndex>
@@ -4480,7 +4480,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_2_fu_166</first>
+        <first>tmp_7_fu_166</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

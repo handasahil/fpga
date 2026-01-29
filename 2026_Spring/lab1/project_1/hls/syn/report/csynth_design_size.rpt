@@ -29,14 +29,14 @@
 |               |                             |              |                                                                                        |
 | HW Transforms |                             |              | After hardware transfomations                                                          |
 |               | (1) lowering                |   195        | initial conversion to HW specific instructions                                         |
-|               | (2) optimizations           |   216        | high level synthesis optimizations                                                     |
+|               | (2) optimizations           |   218        | high level synthesis optimizations                                                     |
 +---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
 
 * Instructions per Function for each Compilation Phase
 +--------------+-----------+--------------+---------------+--------------+-------------+---------------+
 | Function     | Location  | Compile/Link | Unroll/Inline | Array/Struct | Performance | HW Transforms |
 +--------------+-----------+--------------+---------------+--------------+-------------+---------------+
-|   top_kernel | top.cpp:5 | 4,844        | 191           | 199          | 191         | 216           |
+|   top_kernel | top.cpp:5 | 4,844        | 191           | 199          | 191         | 218           |
 +--------------+-----------+--------------+---------------+--------------+-------------+---------------+
 
 * Design Size Message Settings

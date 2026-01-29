@@ -160,9 +160,9 @@ wire   [39:0] grp_fu_158_p0;
 wire  signed [23:0] grp_fu_158_p1;
 wire   [39:0] grp_fu_158_p2;
 wire   [15:0] tmp_s_fu_183_p4;
-wire   [0:0] tmp_1_fu_175_p3;
+wire   [0:0] tmp_6_fu_175_p3;
 wire   [0:0] icmp_ln26_1_fu_199_p2;
-wire   [0:0] tmp_1_1_fu_163_p3;
+wire   [0:0] tmp_1_fu_163_p3;
 wire   [0:0] or_ln26_fu_205_p2;
 wire   [0:0] xor_ln26_fu_211_p2;
 wire   [0:0] icmp_ln26_fu_193_p2;
@@ -969,7 +969,7 @@ assign add_ln24_fu_124_p2 = (ap_sig_allocacmp_j_1 + 7'd1);
 
 assign add_ln26_fu_134_p2 = (zext_ln26 + zext_ln26_1_fu_130_p1);
 
-assign and_ln26_1_fu_235_p2 = (tmp_1_1_fu_163_p3 & or_ln26_1_fu_229_p2);
+assign and_ln26_1_fu_235_p2 = (tmp_1_fu_163_p3 & or_ln26_1_fu_229_p2);
 
 assign and_ln26_fu_217_p2 = (xor_ln26_fu_211_p2 & or_ln26_fu_205_p2);
 
@@ -1007,15 +1007,15 @@ assign or_ln26_1_fu_229_p2 = (xor_ln26_1_fu_223_p2 | icmp_ln26_fu_193_p2);
 
 assign or_ln26_2_fu_249_p2 = (and_ln26_fu_217_p2 | and_ln26_1_fu_235_p2);
 
-assign or_ln26_fu_205_p2 = (tmp_1_fu_175_p3 | icmp_ln26_1_fu_199_p2);
+assign or_ln26_fu_205_p2 = (tmp_6_fu_175_p3 | icmp_ln26_1_fu_199_p2);
 
 assign select_ln26_1_fu_255_p3 = ((or_ln26_2_fu_249_p2[0:0] == 1'b1) ? select_ln26_fu_241_p3 : trunc_ln26_fu_171_p1);
 
 assign select_ln26_fu_241_p3 = ((and_ln26_fu_217_p2[0:0] == 1'b1) ? 24'd8388607 : 24'd8388608);
 
-assign tmp_1_1_fu_163_p3 = grp_fu_158_p2[32'd39];
+assign tmp_1_fu_163_p3 = grp_fu_158_p2[32'd39];
 
-assign tmp_1_fu_175_p3 = grp_fu_158_p2[32'd23];
+assign tmp_6_fu_175_p3 = grp_fu_158_p2[32'd23];
 
 assign tmp_address0 = zext_ln26_2_reg_280_pp0_iter43_reg;
 
@@ -1029,9 +1029,9 @@ assign tmp_we0 = tmp_we0_local;
 
 assign trunc_ln26_fu_171_p1 = grp_fu_158_p2[23:0];
 
-assign xor_ln26_1_fu_223_p2 = (tmp_1_fu_175_p3 ^ 1'd1);
+assign xor_ln26_1_fu_223_p2 = (tmp_6_fu_175_p3 ^ 1'd1);
 
-assign xor_ln26_fu_211_p2 = (tmp_1_1_fu_163_p3 ^ 1'd1);
+assign xor_ln26_fu_211_p2 = (tmp_1_fu_163_p3 ^ 1'd1);
 
 assign zext_ln26_1_fu_130_p1 = ap_sig_allocacmp_j_1;
 

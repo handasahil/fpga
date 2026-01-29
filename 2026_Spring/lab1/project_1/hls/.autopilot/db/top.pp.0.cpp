@@ -6545,15 +6545,17 @@ __attribute__((sdx_kernel("top_kernel", 0))) void top_kernel(data_t A[256][64],
 
 
         VITIS_LOOP_35_5: for (int i = 0; i < 256; i++) {
-            col_sum += tmp[i][j];
+#pragma HLS PIPELINE II=1
+ col_sum += tmp[i][j];
         }
 
 
         data_t scale = col_sum / (data_t)256;
 
 
-        VITIS_LOOP_43_6: for (int i = 0; i < 256; i++) {
-            C[i][j] = tmp[i][j] * scale;
+        VITIS_LOOP_44_6: for (int i = 0; i < 256; i++) {
+#pragma HLS PIPELINE II=1
+ C[i][j] = tmp[i][j] * scale;
         }
     }
 }

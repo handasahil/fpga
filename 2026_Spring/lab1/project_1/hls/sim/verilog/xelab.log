@@ -15,6 +15,10 @@ INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/shanda34/FPGA_ECE889
 INFO: [VRFC 10-311] analyzing module top_kernel_top_kernel_Pipeline_VITIS_LOOP_15_2
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/sim/verilog/top_kernel_top_kernel_Pipeline_VITIS_LOOP_24_3.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top_kernel_top_kernel_Pipeline_VITIS_LOOP_24_3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/sim/verilog/top_kernel_top_kernel_Pipeline_VITIS_LOOP_35_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_top_kernel_Pipeline_VITIS_LOOP_35_5
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/sim/verilog/top_kernel_top_kernel_Pipeline_VITIS_LOOP_44_6.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_kernel_top_kernel_Pipeline_VITIS_LOOP_44_6
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/sim/verilog/top_kernel.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top_kernel
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/sim/verilog/top_kernel_flow_control_loop_pipe_sequential_init.v" into library xil_defaultlib
@@ -59,7 +63,9 @@ Compiling module xil_defaultlib.top_kernel_top_kernel_Pipeline_V...
 Compiling module xil_defaultlib.top_kernel_sdiv_40ns_24s_40_44_1...
 Compiling module xil_defaultlib.top_kernel_sdiv_40ns_24s_40_44_1...
 Compiling module xil_defaultlib.top_kernel_top_kernel_Pipeline_V...
+Compiling module xil_defaultlib.top_kernel_top_kernel_Pipeline_V...
 Compiling module xil_defaultlib.top_kernel_mul_24s_24s_48_1_1(NU...
+Compiling module xil_defaultlib.top_kernel_top_kernel_Pipeline_V...
 Compiling module xil_defaultlib.top_kernel_mul_40s_42ns_81_1_1(N...
 Compiling module xil_defaultlib.top_kernel
 Compiling module xil_defaultlib.misc_interface_default
@@ -67,7 +73,7 @@ Compiling module xil_defaultlib.sv_module_top
 Compiling module xil_defaultlib.AESL_automem_A
 Compiling module xil_defaultlib.AESL_automem_C
 Compiling module xil_defaultlib.nodf_module_intf_default
-Compiling module xil_defaultlib.seq_loop_intf(FSM_WIDTH=12)
+Compiling module xil_defaultlib.seq_loop_intf(FSM_WIDTH=10)
 Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=1)
 Compiling module xil_defaultlib.dataflow_monitor_1
 Compiling module xil_defaultlib.apatb_top_kernel_top
