@@ -1,0 +1,411 @@
+
+*** Running vivado
+    with args -log bd_0_hls_inst_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_0_hls_inst_0.tcl
+
+
+****** Vivado v2025.1.1 (64-bit)
+  **** SW Build 6233196 on Thu Sep 11 21:27:11 MDT 2025
+  **** IP Build 6232796 on Fri Sep 12 01:46:16 MDT 2025
+  **** SharedData Build 6233195 on Thu Sep 11 17:56:43 MDT 2025
+  **** Start of session at: Thu Jan 29 13:59:33 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source bd_0_hls_inst_0.tcl -notrace
+INFO: Dispatch client connection id - 35829
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/software/xilinx/2025.1.1/data/ip'.
+Command: synth_design -top bd_0_hls_inst_0 -part xczu3eg-sbva484-1-e -directive sdx_optimization_effort_high -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Device 21-403] Loading part xczu3eg-sbva484-1-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 1493748
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 53506 ; free virtual = 182179
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'bd_0_hls_inst_0' [/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel' [/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0a2a/hdl/verilog/top_kernel.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_tmp_RAM_AUTO_1R1W' [/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0a2a/hdl/verilog/top_kernel_tmp_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-3876] $readmem data file './top_kernel_tmp_RAM_AUTO_1R1W.dat' is read successfully [/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0a2a/hdl/verilog/top_kernel_tmp_RAM_AUTO_1R1W.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_tmp_RAM_AUTO_1R1W' (0#1) [/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0a2a/hdl/verilog/top_kernel_tmp_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_mul_24s_24s_48_1_1' [/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0a2a/hdl/verilog/top_kernel_mul_24s_24s_48_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_mul_24s_24s_48_1_1' (0#1) [/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0a2a/hdl/verilog/top_kernel_mul_24s_24s_48_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_mul_40s_42ns_81_1_1' [/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0a2a/hdl/verilog/top_kernel_mul_40s_42ns_81_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_mul_40s_42ns_81_1_1' (0#1) [/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0a2a/hdl/verilog/top_kernel_mul_40s_42ns_81_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_sdiv_40ns_24s_40_44_seq_1' [/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0a2a/hdl/verilog/top_kernel_sdiv_40ns_24s_40_44_seq_1.v:88]
+INFO: [Synth 8-6157] synthesizing module 'top_kernel_sdiv_40ns_24s_40_44_seq_1_divseq' [/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0a2a/hdl/verilog/top_kernel_sdiv_40ns_24s_40_44_seq_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_sdiv_40ns_24s_40_44_seq_1_divseq' (0#1) [/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0a2a/hdl/verilog/top_kernel_sdiv_40ns_24s_40_44_seq_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel_sdiv_40ns_24s_40_44_seq_1' (0#1) [/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0a2a/hdl/verilog/top_kernel_sdiv_40ns_24s_40_44_seq_1.v:88]
+INFO: [Synth 8-6155] done synthesizing module 'top_kernel' (0#1) [/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0a2a/hdl/verilog/top_kernel.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0_hls_inst_0' (0#1) [/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element remd_reg was removed.  [/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0a2a/hdl/verilog/top_kernel_sdiv_40ns_24s_40_44_seq_1.v:172]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+WARNING: [Synth 8-7129] Port reset in module top_kernel_tmp_RAM_AUTO_1R1W is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 53565 ; free virtual = 182239
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 53560 ; free virtual = 182235
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 53560 ; free virtual = 182235
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 53546 ; free virtual = 182219
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/top_kernel_ooc.xdc] for cell 'inst'
+create_clock: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 53039 ; free virtual = 181721
+Finished Parsing XDC File [/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/top_kernel_ooc.xdc] for cell 'inst'
+Parsing XDC File [/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 53084 ; free virtual = 181766
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.04 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 53179 ; free virtual = 181861
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 53014 ; free virtual = 181736
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu3eg-sbva484-1-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 53014 ; free virtual = 181736
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 53014 ; free virtual = 181736
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 53017 ; free virtual = 181739
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   41 Bit       Adders := 1     
+	   2 Input   40 Bit       Adders := 2     
+	   2 Input   25 Bit       Adders := 3     
+	   2 Input   24 Bit       Adders := 4     
+	   2 Input   18 Bit       Adders := 1     
+	   2 Input   14 Bit       Adders := 4     
+	   2 Input    9 Bit       Adders := 3     
+	   2 Input    7 Bit       Adders := 3     
++---XORs : 
+	   2 Input      1 Bit         XORs := 16    
++---Registers : 
+	               56 Bit    Registers := 1     
+	               41 Bit    Registers := 1     
+	               40 Bit    Registers := 5     
+	               24 Bit    Registers := 8     
+	               18 Bit    Registers := 1     
+	               14 Bit    Registers := 2     
+	                9 Bit    Registers := 6     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 8     
+	                6 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Multipliers : 
+	              40x43  Multipliers := 1     
++---RAMs : 
+	             384K Bit	(16384 X 24 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input   55 Bit        Muxes := 1     
+	   2 Input   53 Bit        Muxes := 1     
+	   2 Input   51 Bit        Muxes := 1     
+	   2 Input   50 Bit        Muxes := 1     
+	   2 Input   40 Bit        Muxes := 4     
+	   2 Input   39 Bit        Muxes := 1     
+	   2 Input   24 Bit        Muxes := 5     
+	   3 Input   24 Bit        Muxes := 4     
+	   2 Input   18 Bit        Muxes := 1     
+	   2 Input   17 Bit        Muxes := 1     
+	   2 Input   14 Bit        Muxes := 3     
+	   2 Input    6 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 360 (col length:72)
+BRAMs: 432 (col length: RAMB18 72 RAMB36 36)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3936] Found unconnected internal register 'sdiv_40ns_24s_40_44_seq_1_U3/top_kernel_sdiv_40ns_24s_40_44_seq_1_divseq_u/remd_tmp_reg' and it is trimmed from '40' to '39' bits. [/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/0a2a/hdl/verilog/top_kernel_sdiv_40ns_24s_40_44_seq_1.v:44]
+DSP Report: Generating DSP mul_40s_42ns_81_1_1_U2/tmp_product, operation Mode is: A*B2.
+DSP Report: register mul_40s_42ns_81_1_1_U2/tmp_product is absorbed into DSP mul_40s_42ns_81_1_1_U2/tmp_product.
+DSP Report: operator mul_40s_42ns_81_1_1_U2/tmp_product is absorbed into DSP mul_40s_42ns_81_1_1_U2/tmp_product.
+DSP Report: operator mul_40s_42ns_81_1_1_U2/tmp_product is absorbed into DSP mul_40s_42ns_81_1_1_U2/tmp_product.
+DSP Report: Generating DSP mul_40s_42ns_81_1_1_U2/tmp_product, operation Mode is: A2*(B:0x1).
+DSP Report: register mul_40s_42ns_81_1_1_U2/tmp_product is absorbed into DSP mul_40s_42ns_81_1_1_U2/tmp_product.
+DSP Report: operator mul_40s_42ns_81_1_1_U2/tmp_product is absorbed into DSP mul_40s_42ns_81_1_1_U2/tmp_product.
+DSP Report: operator mul_40s_42ns_81_1_1_U2/tmp_product is absorbed into DSP mul_40s_42ns_81_1_1_U2/tmp_product.
+DSP Report: Generating DSP mul_40s_42ns_81_1_1_U2/tmp_product, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register mul_40s_42ns_81_1_1_U2/tmp_product is absorbed into DSP mul_40s_42ns_81_1_1_U2/tmp_product.
+DSP Report: operator mul_40s_42ns_81_1_1_U2/tmp_product is absorbed into DSP mul_40s_42ns_81_1_1_U2/tmp_product.
+DSP Report: operator mul_40s_42ns_81_1_1_U2/tmp_product is absorbed into DSP mul_40s_42ns_81_1_1_U2/tmp_product.
+DSP Report: Generating DSP mul_40s_42ns_81_1_1_U2/tmp_product, operation Mode is: A2*(B:0x1).
+DSP Report: register mul_40s_42ns_81_1_1_U2/tmp_product is absorbed into DSP mul_40s_42ns_81_1_1_U2/tmp_product.
+DSP Report: operator mul_40s_42ns_81_1_1_U2/tmp_product is absorbed into DSP mul_40s_42ns_81_1_1_U2/tmp_product.
+DSP Report: operator mul_40s_42ns_81_1_1_U2/tmp_product is absorbed into DSP mul_40s_42ns_81_1_1_U2/tmp_product.
+DSP Report: Generating DSP mul_40s_42ns_81_1_1_U2/tmp_product, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register mul_40s_42ns_81_1_1_U2/tmp_product is absorbed into DSP mul_40s_42ns_81_1_1_U2/tmp_product.
+DSP Report: operator mul_40s_42ns_81_1_1_U2/tmp_product is absorbed into DSP mul_40s_42ns_81_1_1_U2/tmp_product.
+DSP Report: operator mul_40s_42ns_81_1_1_U2/tmp_product is absorbed into DSP mul_40s_42ns_81_1_1_U2/tmp_product.
+DSP Report: Generating DSP mul_24s_24s_48_1_1_U1/tmp_product, operation Mode is: A2*B.
+DSP Report: register conv7_i_reg_1296_reg is absorbed into DSP mul_24s_24s_48_1_1_U1/tmp_product.
+DSP Report: operator mul_24s_24s_48_1_1_U1/tmp_product is absorbed into DSP mul_24s_24s_48_1_1_U1/tmp_product.
+DSP Report: operator mul_24s_24s_48_1_1_U1/tmp_product is absorbed into DSP mul_24s_24s_48_1_1_U1/tmp_product.
+DSP Report: Generating DSP mul_24s_24s_48_1_1_U1/tmp_product, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register conv7_i_reg_1296_reg is absorbed into DSP mul_24s_24s_48_1_1_U1/tmp_product.
+DSP Report: operator mul_24s_24s_48_1_1_U1/tmp_product is absorbed into DSP mul_24s_24s_48_1_1_U1/tmp_product.
+DSP Report: operator mul_24s_24s_48_1_1_U1/tmp_product is absorbed into DSP mul_24s_24s_48_1_1_U1/tmp_product.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 52905 ; free virtual = 181633
+---------------------------------------------------------------------------------
+ Sort Area is  mul_24s_24s_48_1_1_U1/tmp_product_7 : 0 0 : 3324 4380 : Used 1 time 0
+ Sort Area is  mul_24s_24s_48_1_1_U1/tmp_product_7 : 0 1 : 1056 4380 : Used 1 time 0
+ Sort Area is  mul_40s_42ns_81_1_1_U2/tmp_product_3 : 0 0 : 291 3730 : Used 1 time 0
+ Sort Area is  mul_40s_42ns_81_1_1_U2/tmp_product_3 : 0 1 : 3439 3730 : Used 1 time 0
+ Sort Area is  mul_40s_42ns_81_1_1_U2/tmp_product_0 : 0 0 : 274 3713 : Used 1 time 0
+ Sort Area is  mul_40s_42ns_81_1_1_U2/tmp_product_0 : 0 1 : 3439 3713 : Used 1 time 0
+ Sort Area is  mul_40s_42ns_81_1_1_U2/tmp_product_5 : 0 0 : 1024 1024 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++------------+---------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name | RTL Object    | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++------------+---------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|inst        | tmp_U/ram_reg | 16 K x 24(READ_FIRST)  | W | R |                        |   |   | Port A           | 0      | 11     | 8,2,1           | 
++------------+---------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping     | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|top_kernel  | A*B2            | 25     | 6      | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel  | A2*(B:0x1)      | 23     | 2      | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|top_kernel  | (PCIN>>17)+A*B2 | 25     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel  | A2*(B:0x1)      | 18     | 2      | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|top_kernel  | (PCIN>>17)+A*B2 | 25     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel  | A2*B            | 24     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|top_kernel  | (PCIN>>17)+A2*B | 24     | 7      | -      | -      | 31     | 1    | 0    | -    | -    | -     | 0    | 0    | 
++------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:45 ; elapsed = 00:00:48 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 52162 ; free virtual = 180859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5556] The block RAM "inst/tmp_U/ram_reg" may be mapped as a cascade chain, because it is not timing critical.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:00:49 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 51953 ; free virtual = 180650
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++------------+---------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name | RTL Object    | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++------------+---------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|inst        | tmp_U/ram_reg | 16 K x 24(READ_FIRST)  | W | R |                        |   |   | Port A           | 0      | 11     | 8,2,1           | 
++------------+---------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/tmp_U/ram_reg_bram_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tmp_U/ram_reg_bram_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/tmp_U/ram_reg_bram_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:46 ; elapsed = 00:00:50 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 52183 ; free virtual = 180887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:52 ; elapsed = 00:00:56 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 51827 ; free virtual = 180541
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:52 ; elapsed = 00:00:56 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 51823 ; free virtual = 180537
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:52 ; elapsed = 00:00:56 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 51936 ; free virtual = 180650
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:52 ; elapsed = 00:00:56 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 51935 ; free virtual = 180649
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:52 ; elapsed = 00:00:56 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 51933 ; free virtual = 180647
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:52 ; elapsed = 00:00:56 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 51932 ; free virtual = 180646
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+--------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                                                                   | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+--------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|top_kernel  | ap_CS_fsm_reg[48]                                                                          | 43     | 1     | YES          | NO                 | YES               | 0      | 2       | 
+|top_kernel  | sdiv_40ns_24s_40_44_seq_1_U3/top_kernel_sdiv_40ns_24s_40_44_seq_1_divseq_u/r_stage_reg[40] | 40     | 1     | YES          | NO                 | YES               | 0      | 2       | 
++------------+--------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|top_kernel  | A''*B          | 30     | 17     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|top_kernel  | PCIN>>17+A''*B | 30     | 18     | -      | -      | 31     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|top_kernel  | A*B'           | 24     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel  | A'*B           | 30     | 1      | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|top_kernel  | PCIN>>17+A*B'  | 24     | 17     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|top_kernel  | A'*B           | 17     | 1      | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|top_kernel  | PCIN>>17+A*B'  | 24     | 17     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------------+------+
+|      |Cell            |Count |
++------+----------------+------+
+|1     |CARRY8          |    62|
+|2     |DSP_ALU         |     7|
+|3     |DSP_A_B_DATA    |     7|
+|6     |DSP_C_DATA      |     7|
+|7     |DSP_MULTIPLIER  |     7|
+|8     |DSP_M_DATA      |     7|
+|9     |DSP_OUTPUT      |     7|
+|10    |DSP_PREADD      |     7|
+|11    |DSP_PREADD_DATA |     7|
+|12    |LUT1            |   138|
+|13    |LUT2            |   259|
+|14    |LUT3            |   210|
+|15    |LUT4            |   179|
+|16    |LUT5            |    31|
+|17    |LUT6            |    79|
+|18    |RAMB36E2        |    11|
+|24    |SRLC32E         |     4|
+|25    |FDRE            |   419|
+|26    |FDSE            |    93|
++------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:52 ; elapsed = 00:00:56 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 51932 ; free virtual = 180646
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 51903 ; free virtual = 180619
+Synthesis Optimization Complete : Time (s): cpu = 00:00:53 ; elapsed = 00:00:57 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 51903 ; free virtual = 180619
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 52052 ; free virtual = 180767
+INFO: [Netlist 29-17] Analyzing 69 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 51711 ; free virtual = 180429
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 7 instances were transformed.
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 7 instances
+
+Synth Design complete | Checksum: ae70a404
+INFO: [Common 17-83] Releasing license: Synthesis
+41 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:05 ; elapsed = 00:01:06 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 51670 ; free virtual = 180388
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2695.321; main = 2622.421; forked = 208.768
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 5388.645; main = 3924.461; forked = 1598.230
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 51719 ; free virtual = 180445
+INFO: [Common 17-1381] The checkpoint '/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bd_0_hls_inst_0, cache-ID = 3ec3a6dcdda9eb94
+INFO: [Coretcl 2-1174] Renamed 6 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 51548 ; free virtual = 180275
+INFO: [Common 17-1381] The checkpoint '/nethome/shanda34/FPGA_ECE8893/2026_Spring/lab1/project_1/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file bd_0_hls_inst_0_utilization_synth.rpt -pb bd_0_hls_inst_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Jan 29 14:00:55 2026...
